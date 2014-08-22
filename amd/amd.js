@@ -120,7 +120,7 @@
     require.config = function(map) {
         for(var n in map) config[n] = map[n]; 
     };
-    
+    //用于判断模块是否遵循AMD规范
     define.amd = config;
 
     window.require = require;
