@@ -10,7 +10,7 @@ grunt.initConfig({
 	
 	//配置 jshint任务 【作用：语法检查】
 	jshint: {
-		all: ['src/*.js']
+		all: ['src/*.js'] //或者 files: ['a.js', 'b.js', 'c.js']
 	},
 	//配置 autoprefixer 任务【作用：自动补齐css前缀】
 	autoprefixer: {
@@ -52,7 +52,7 @@ grunt.initConfig({
 //任务加载
 grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-autoprefixer');
-grunt.loadNpmTasks('grunt-cssmin');
+grunt.loadNpmTasks('grunt-css');
 grunt.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-watch');
